@@ -46,27 +46,56 @@ The system has **3 main panels**:
 ```
 hospital/
 │
-├── frontend/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   ├── index.html
-│   └── login.html
+├── hms/
+│   ├── admin/                  # Admin panel files
+│   ├── doctor/                 # Doctor panel files
+│   ├── include/                # Common includes (DB connection, config)
+│   ├── vendor/                 # External libraries
+│   ├── assets/                 # CSS, JS, images
+│   │
+│   ├── index.php               # Main entry point
+│   ├── dashboard.php           # Dashboard page
+│   ├── registration.php        # Patient registration
+│   ├── user-login.php          # User login
+│   ├── logout.php              # Logout functionality
+│   │
+│   ├── book-appointment.php    # Book appointment
+│   ├── appointment-history.php # Appointment history
+│   ├── view-medhistory.php     # View medical history
+│   ├── manage-medhistory.php   # Manage medical records
+│   │
+│   ├── edit-profile.php        # Edit user profile
+│   ├── change-password.php     # Change password
+│   ├── change-emaild.php       # Change email
+│   │
+│   ├── forgot-password.php     # Forgot password
+│   ├── reset-password.php      # Reset password
+│   │
+│   ├── check_availability.php  # Check doctor availability
+│   ├── get_doctor.php          # Fetch doctor data
+│   │
+│   ├── database.sql            # Database file
+│   ├── dataflowdiagram.drawio  # Data Flow Diagram
+│   ├── DFD.drawio.png          # DFD image
+│   ├── er-diagram.drawio       # ER Diagram file
+│   ├── hms.drawio.png          # System diagram image
 │
-├── backend/
-│   ├── config/
-│   │   └── db.php
-│   ├── patient/
-│   ├── doctor/
-│   └── admin/
+├── assets/                     # Global assets (if used outside hms)
 │
-├── database/
-│   └── hms.sql
-│
-└── README.md
+└── README.md                   # Project documentation
 ```
 
 ---
+
+## 📌 Notes
+
+* `admin/` → Admin panel
+* `doctor/` → Doctor panel
+* `include/` → Database & config files
+* `assets/` → CSS, JS, images
+* `.php files` → Core functionality
+* `.sql file` → Database setup
+
 
 ## ⚙️ Requirements
 
